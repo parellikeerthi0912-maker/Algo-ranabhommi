@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "benchmark": "delivery-route-planner",
+  "environment": {
+    "python": "3.13.5",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "generated_at": "2026-10-01T08:26:39+00:00"
+  },
+  "adapter": "adapters.myteam:Router",
+  "budget_scale": 1.0,
+  "generator_schema": "delivery-1.0",
+  "result": {
+    "checkpoints": [
+      0.01,
+      0.1,
+      0.5,
+      1.0
+    ],
+    "checkpoint_weights": [
+      0.3,
+      0.3,
+      0.2,
+      0.2
+    ],
+    "instances": [
+      {
+        "instance": "d06-mixed-tight",
+        "size": 400,
+        "profile": {
+          "n": 400,
+          "layout": "mixed",
+          "demand": "heavy_light",
+          "windows": "tight",
+          "fleet": "tight"
+        },
+        "shifted": true,
+        "budget_s": 14.0,
+        "wall_s": 13.704,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 3896.35,
+        "reference_cost": 3668.28,
+        "best_cost": 3731.95,
+        "gap_to_reference_pct": 1.74,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          4098.53,
+          3756.99,
+          3743.15,
+          3731.95
+        ],
+        "checkpoint_scores": [
+          0.0,
+          0.7083,
+          0.7538,
+          0.7906
+        ],
+        "score": 0.5214,
+        "first_valid_at_s": 0.0271,
+        "candidates": {
+          "accepted": 45,
+          "rejected": 0,
+          "reasons": {}
+        }
+      },
+      {
+        "instance": "d07-ring-waves-hetero",
+        "size": 520,
+        "profile": {
+          "n": 520,
+          "layout": "ring",
+          "demand": "heavy_light",
+          "windows": "waves",
+          "fleet": "heterogeneous"
+        },
+        "shifted": true,
+        "budget_s": 17.0,
+        "wall_s": 3.12,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 3451.24,
+        "reference_cost": 3270.2,
+        "best_cost": 3421.62,
+        "gap_to_reference_pct": 4.63,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          null,
+          3456.24,
+          3421.62,
+          3421.62
+        ],
+        "checkpoint_scores": [
+          0.0,
+          0.2293,
+          0.3727,
+          0.3727
+        ],
+        "score": 0.2179,
+        "first_valid_at_s": 0.1795,
+        "candidates": {
+          "accepted": 27,
+          "rejected": 0,
+          "reasons": {}
+        }
+      },
+      {
+        "instance": "d08-uniform-waves",
+        "size": 650,
+        "profile": {
+          "n": 650,
+          "layout": "uniform",
+          "demand": "skewed",
+          "windows": "waves",
+          "fleet": "tight"
+        },
+        "shifted": true,
+        "budget_s": 20.25,
+        "wall_s": 1.693,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 3778.98,
+        "reference_cost": 3606.68,
+        "best_cost": 3811.35,
+        "gap_to_reference_pct": 5.67,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          4095.16,
+          3811.35,
+          3811.35,
+          3811.35
+        ],
+        "checkpoint_scores": [
+          0.0,
+          0.1091,
+          0.1091,
+          0.1091
+        ],
+        "score": 0.0764,
+        "first_valid_at_s": 0.1742,
+        "candidates": {
+          "accepted": 20,
+          "rejected": 0,
+          "reasons": {}
+        }
+      }
+    ],
+    "families": {
+      "layout:mixed": 0.5214,
+      "demand:heavy_light": 0.3696,
+      "windows:tight": 0.5214,
+      "fleet:tight": 0.2989,
+      "layout:ring": 0.2179,
+      "windows:waves": 0.1472,
+      "fleet:heterogeneous": 0.2179,
+      "layout:uniform": 0.0764,
+      "demand:skewed": 0.0764
+    },
+    "aggregate": {
+      "quality_mean": 0.2719,
+      "robustness_mean": 0.2719,
+      "engineering": 1.0,
+      "engineering_parts": {
+        "determinism": 0.4,
+        "valid_output": 0.3,
+        "instance_untouched": 0.2,
+        "within_budget": 0.1
+      },
+      "shifted_instances": 3,
+      "dead_families": [],
+      "specialised": true,
+      "determinism_checked": null
+    },
+    "points": {
+      "quality": 19.033,
+      "robustness": 4.079,
+      "engineering": 1.0,
+      "total": 23.111,
+      "penalties": [
+        "family_below_published_baseline"
+      ]
+    }
+  },
+  "practice": null
+}

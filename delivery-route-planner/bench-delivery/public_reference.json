@@ -1,0 +1,188 @@
+{
+  "schema": "delivery-reference-1.0",
+  "generator_schema": "delivery-1.0",
+  "reference_budget_multiplier": 15.0,
+  "note": "baseline_cost_units anchors 0.25, reference_cost_units anchors 1.00. Baseline: adapters.savings:SavingsRouter at 1x budget. Reference: best of the baseline and private/reference_solver.py at 15x budget. Regenerate whenever the generator changes.",
+  "instances": {
+    "d01-ring-tight": {
+      "size": 80,
+      "profile": {
+        "n": 80,
+        "layout": "ring",
+        "demand": "heavy_light",
+        "windows": "tight",
+        "fleet": "tight"
+      },
+      "digest": "090d36de3568ecb4",
+      "contestant_budget_s": 6.0,
+      "baseline_cost_units": 5439965,
+      "baseline_adapter": "adapters.savings:SavingsRouter",
+      "reference_cost_units": 5071800,
+      "reference_budget_s": 90.0,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 6.77
+    },
+    "d02-mixed-waves": {
+      "size": 120,
+      "profile": {
+        "n": 120,
+        "layout": "mixed",
+        "demand": "heavy_light",
+        "windows": "waves",
+        "fleet": "heterogeneous"
+      },
+      "digest": "ab83ab614312b304",
+      "contestant_budget_s": 7.0,
+      "baseline_cost_units": 7044060,
+      "baseline_adapter": "adapters.savings:SavingsRouter",
+      "reference_cost_units": 6899550,
+      "reference_budget_s": 105.0,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 2.05
+    },
+    "d03-uniform-tightfleet": {
+      "size": 160,
+      "profile": {
+        "n": 160,
+        "layout": "uniform",
+        "demand": "narrow",
+        "windows": "tight",
+        "fleet": "tight"
+      },
+      "digest": "8e48efeeeb3dc020",
+      "contestant_budget_s": 8.0,
+      "baseline_cost_units": 10924070,
+      "baseline_adapter": "adapters.savings:SavingsRouter",
+      "reference_cost_units": 9852335,
+      "reference_budget_s": 120.0,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 9.81
+    },
+    "d04-clustered-waves": {
+      "size": 220,
+      "profile": {
+        "n": 220,
+        "layout": "clustered",
+        "demand": "heavy_light",
+        "windows": "waves",
+        "fleet": "tight"
+      },
+      "digest": "0fcc16b73c772e03",
+      "contestant_budget_s": 9.5,
+      "baseline_cost_units": 11313840,
+      "baseline_adapter": "adapters.savings:SavingsRouter",
+      "reference_cost_units": 9896260,
+      "reference_budget_s": 142.5,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 12.53
+    },
+    "d05-ring-hetero": {
+      "size": 300,
+      "profile": {
+        "n": 300,
+        "layout": "ring",
+        "demand": "skewed",
+        "windows": "tight",
+        "fleet": "heterogeneous"
+      },
+      "digest": "5ae2bf4e0a21467e",
+      "contestant_budget_s": 11.5,
+      "baseline_cost_units": 18376925,
+      "baseline_adapter": "adapters.savings:SavingsRouter",
+      "reference_cost_units": 15268920,
+      "reference_budget_s": 172.5,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 16.91
+    },
+    "d06-mixed-tight": {
+      "size": 400,
+      "profile": {
+        "n": 400,
+        "layout": "mixed",
+        "demand": "heavy_light",
+        "windows": "tight",
+        "fleet": "tight"
+      },
+      "digest": "9384a32b57adfc35",
+      "contestant_budget_s": 14.0,
+      "baseline_cost_units": 23378120,
+      "baseline_adapter": "adapters.savings:SavingsRouter",
+      "reference_cost_units": 22009710,
+      "reference_budget_s": 210.0,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 5.85
+    },
+    "d07-ring-waves-hetero": {
+      "size": 520,
+      "profile": {
+        "n": 520,
+        "layout": "ring",
+        "demand": "heavy_light",
+        "windows": "waves",
+        "fleet": "heterogeneous"
+      },
+      "digest": "0de0d3e12f0b4ee0",
+      "contestant_budget_s": 17.0,
+      "baseline_cost_units": 20707440,
+      "baseline_adapter": "adapters.savings:SavingsRouter",
+      "reference_cost_units": 19621205,
+      "reference_budget_s": 255.0,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 5.25
+    },
+    "d08-uniform-waves": {
+      "size": 650,
+      "profile": {
+        "n": 650,
+        "layout": "uniform",
+        "demand": "skewed",
+        "windows": "waves",
+        "fleet": "tight"
+      },
+      "digest": "d9d9c890795a61c7",
+      "contestant_budget_s": 20.25,
+      "baseline_cost_units": 22673870,
+      "baseline_adapter": "adapters.savings:SavingsRouter",
+      "reference_cost_units": 21640060,
+      "reference_budget_s": 303.8,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 4.56
+    },
+    "d09-mixed-hetero-xl": {
+      "size": 820,
+      "profile": {
+        "n": 820,
+        "layout": "mixed",
+        "demand": "heavy_light",
+        "windows": "tight",
+        "fleet": "heterogeneous"
+      },
+      "digest": "18c0fb797585ef83",
+      "contestant_budget_s": 24.5,
+      "baseline_cost_units": 31962840,
+      "baseline_adapter": "adapters.savings:SavingsRouter",
+      "reference_cost_units": 27532510,
+      "reference_budget_s": 367.5,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 13.86
+    },
+    "d10-clustered-xxl": {
+      "size": 1000,
+      "profile": {
+        "n": 1000,
+        "layout": "clustered",
+        "demand": "heavy_light",
+        "windows": "waves",
+        "fleet": "tight"
+      },
+      "digest": "81cc1f49571550e9",
+      "contestant_budget_s": 29.0,
+      "baseline_cost_units": 26907955,
+      "baseline_adapter": "adapters.savings:SavingsRouter",
+      "reference_cost_units": 26062135,
+      "reference_budget_s": 435.0,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 3.14
+    }
+  }
+}

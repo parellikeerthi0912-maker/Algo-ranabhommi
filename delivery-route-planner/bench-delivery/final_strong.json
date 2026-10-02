@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.0",
+  "benchmark": "delivery-route-planner",
+  "environment": {
+    "python": "3.13.5",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "generated_at": "2026-10-01T09:19:56+00:00"
+  },
+  "adapter": "adapters.myteam:Router",
+  "budget_scale": 1.0,
+  "generator_schema": "delivery-1.0",
+  "result": {
+    "checkpoints": [
+      0.01,
+      0.1,
+      0.5,
+      1.0
+    ],
+    "checkpoint_weights": [
+      0.3,
+      0.3,
+      0.2,
+      0.2
+    ],
+    "instances": [
+      {
+        "instance": "d01-ring-tight",
+        "size": 80,
+        "profile": {
+          "n": 80,
+          "layout": "ring",
+          "demand": "heavy_light",
+          "windows": "tight",
+          "fleet": "tight"
+        },
+        "shifted": true,
+        "budget_s": 6.0,
+        "wall_s": 5.716,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 906.66,
+        "reference_cost": 845.3,
+        "best_cost": 920.91,
+        "gap_to_reference_pct": 8.95,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          1013.67,
+          921.53,
+          921.53,
+          920.91
+        ],
+        "checkpoint_scores": [
+          0.0,
+          0.0682,
+          0.0682,
+          0.0758
+        ],
+        "score": 0.0493,
+        "first_valid_at_s": 0.004,
+        "candidates": {
+          "accepted": 28,
+          "rejected": 0,
+          "reasons": {}
+        }
+      },
+      {
+        "instance": "d02-mixed-waves",
+        "size": 120,
+        "profile": {
+          "n": 120,
+          "layout": "mixed",
+          "demand": "heavy_light",
+          "windows": "waves",
+          "fleet": "heterogeneous"
+        },
+        "shifted": true,
+        "budget_s": 7.0,
+        "wall_s": 6.718,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 1174.01,
+        "reference_cost": 1149.92,
+        "best_cost": 1174.01,
+        "gap_to_reference_pct": 2.09,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          1412.94,
+          1218.25,
+          1174.01,
+          1174.01
+        ],
+        "checkpoint_scores": [
+          0.0,
+          0.0,
+          0.25,
+          0.25
+        ],
+        "score": 0.1,
+        "first_valid_at_s": 0.022,
+        "candidates": {
+          "accepted": 28,
+          "rejected": 0,
+          "reasons": {}
+        }
+      },
+      {
+        "instance": "d03-uniform-tightfleet",
+        "size": 160,
+        "profile": {
+          "n": 160,
+          "layout": "uniform",
+          "demand": "narrow",
+          "windows": "tight",
+          "fleet": "tight"
+        },
+        "shifted": true,
+        "budget_s": 8.0,
+        "wall_s": 7.788,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 1820.68,
+        "reference_cost": 1642.06,
+        "best_cost": 1733.99,
+        "gap_to_reference_pct": 5.6,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          2213.94,
+          1734.4,
+          1733.99,
+          1733.99
+        ],
+        "checkpoint_scores": [
+          0.0,
+          0.6123,
+          0.614,
+          0.614
+        ],
+        "score": 0.4293,
+        "first_valid_at_s": 0.0292,
+        "candidates": {
+          "accepted": 12,
+          "rejected": 0,
+          "reasons": {}
+        }
+      },
+      {
+        "instance": "d04-clustered-waves",
+        "size": 220,
+        "profile": {
+          "n": 220,
+          "layout": "clustered",
+          "demand": "heavy_light",
+          "windows": "waves",
+          "fleet": "tight"
+        },
+        "shifted": true,
+        "budget_s": 9.5,
+        "wall_s": 9.266,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 1885.64,
+        "reference_cost": 1649.38,
+        "best_cost": 1725.24,
+        "gap_to_reference_pct": 4.6,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          null,
+          1784.93,
+          1725.24,
+          1725.24
+        ],
+        "checkpoint_scores": [
+          0.0,
+          0.5697,
+          0.7592,
+          0.7592
+        ],
+        "score": 0.4746,
+        "first_valid_at_s": 0.2158,
+        "candidates": {
+          "accepted": 43,
+          "rejected": 0,
+          "reasons": {}
+        }
+      },
+      {
+        "instance": "d05-ring-hetero",
+        "size": 300,
+        "profile": {
+          "n": 300,
+          "layout": "ring",
+          "demand": "skewed",
+          "windows": "tight",
+          "fleet": "heterogeneous"
+        },
+        "shifted": true,
+        "budget_s": 11.5,
+        "wall_s": 11.262,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 3062.82,
+        "reference_cost": 2544.82,
+        "best_cost": 2640.16,
+        "gap_to_reference_pct": 3.75,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          2820.24,
+          2641.7,
+          2640.31,
+          2640.16
+        ],
+        "checkpoint_scores": [
+          0.6012,
+          0.8597,
+          0.8617,
+          0.862
+        ],
+        "score": 0.783,
+        "first_valid_at_s": 0.0467,
+        "candidates": {
+          "accepted": 24,
+          "rejected": 0,
+          "reasons": {}
+        }
+      },
+      {
+        "instance": "d06-mixed-tight",
+        "size": 400,
+        "profile": {
+          "n": 400,
+          "layout": "mixed",
+          "demand": "heavy_light",
+          "windows": "tight",
+          "fleet": "tight"
+        },
+        "shifted": true,
+        "budget_s": 14.0,
+        "wall_s": 13.852,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 3896.35,
+        "reference_cost": 3668.28,
+        "best_cost": 3743.82,
+        "gap_to_reference_pct": 2.06,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          null,
+          3901.61,
+          3756.99,
+          3743.82
+        ],
+        "checkpoint_scores": [
+          0.0,
+          0.2327,
+          0.7083,
+          0.7516
+        ],
+        "score": 0.3618,
+        "first_valid_at_s": 0.2346,
+        "candidates": {
+          "accepted": 39,
+          "rejected": 0,
+          "reasons": {}
+        }
+      },
+      {
+        "instance": "d07-ring-waves-hetero",
+        "size": 520,
+        "profile": {
+          "n": 520,
+          "layout": "ring",
+          "demand": "heavy_light",
+          "windows": "waves",
+          "fleet": "heterogeneous"
+        },
+        "shifted": true,
+        "budget_s": 17.0,
+        "wall_s": 14.19,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 3451.24,
+        "reference_cost": 3270.2,
+        "best_cost": 3421.62,
+        "gap_to_reference_pct": 4.63,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          null,
+          3629.49,
+          3448.33,
+          3421.62
+        ],
+        "checkpoint_scores": [
+          0.0,
+          0.0,
+          0.2621,
+          0.3727
+        ],
+        "score": 0.127,
+        "first_valid_at_s": 0.7389,
+        "candidates": {
+          "accepted": 52,
+          "rejected": 0,
+          "reasons": {}
+        }
+      },
+      {
+        "instance": "d08-uniform-waves",
+        "size": 650,
+        "profile": {
+          "n": 650,
+          "layout": "uniform",
+          "demand": "skewed",
+          "windows": "waves",
+          "fleet": "tight"
+        },
+        "shifted": true,
+        "budget_s": 20.25,
+        "wall_s": 7.394,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 3778.98,
+        "reference_cost": 3606.68,
+        "best_cost": 3811.35,
+        "gap_to_reference_pct": 5.67,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          null,
+          4007.56,
+          3811.35,
+          3811.35
+        ],
+        "checkpoint_scores": [
+          0.0,
+          0.0,
+          0.1091,
+          0.1091
+        ],
+        "score": 0.0436,
+        "first_valid_at_s": 0.7379,
+        "candidates": {
+          "accepted": 49,
+          "rejected": 0,
+          "reasons": {}
+        }
+      },
+      {
+        "instance": "d09-mixed-hetero-xl",
+        "size": 820,
+        "profile": {
+          "n": 820,
+          "layout": "mixed",
+          "demand": "heavy_light",
+          "windows": "tight",
+          "fleet": "heterogeneous"
+        },
+        "shifted": true,
+        "budget_s": 24.5,
+        "wall_s": 7.105,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 5327.14,
+        "reference_cost": 4588.75,
+        "best_cost": 4392.87,
+        "gap_to_reference_pct": -4.27,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          null,
+          4508.53,
+          4392.87,
+          4392.87
+        ],
+        "checkpoint_scores": [
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "score": 0.7,
+        "first_valid_at_s": 0.3033,
+        "candidates": {
+          "accepted": 37,
+          "rejected": 0,
+          "reasons": {}
+        }
+      },
+      {
+        "instance": "d10-clustered-xxl",
+        "size": 1000,
+        "profile": {
+          "n": 1000,
+          "layout": "clustered",
+          "demand": "heavy_light",
+          "windows": "waves",
+          "fleet": "tight"
+        },
+        "shifted": true,
+        "budget_s": 29.0,
+        "wall_s": 8.979,
+        "valid": true,
+        "error": null,
+        "baseline_cost": 4484.66,
+        "reference_cost": 4343.69,
+        "best_cost": 4450.02,
+        "gap_to_reference_pct": 2.45,
+        "checkpoint_fractions": [
+          0.01,
+          0.1,
+          0.5,
+          1.0
+        ],
+        "checkpoint_costs": [
+          null,
+          4513.03,
+          4450.02,
+          4450.02
+        ],
+        "checkpoint_scores": [
+          0.0,
+          0.0991,
+          0.4343,
+          0.4343
+        ],
+        "score": 0.2034,
+        "first_valid_at_s": 0.3207,
+        "candidates": {
+          "accepted": 59,
+          "rejected": 0,
+          "reasons": {}
+        }
+      }
+    ],
+    "families": {
+      "layout:ring": 0.3198,
+      "demand:heavy_light": 0.288,
+      "windows:tight": 0.4647,
+      "fleet:tight": 0.2603,
+      "layout:mixed": 0.3873,
+      "windows:waves": 0.1897,
+      "fleet:heterogeneous": 0.4275,
+      "layout:uniform": 0.2364,
+      "demand:narrow": 0.4293,
+      "layout:clustered": 0.339,
+      "demand:skewed": 0.4133
+    },
+    "aggregate": {
+      "quality_mean": 0.3272,
+      "robustness_mean": 0.3272,
+      "engineering": 0.6,
+      "engineering_parts": {
+        "determinism": 0.0,
+        "valid_output": 0.3,
+        "instance_untouched": 0.2,
+        "within_budget": 0.1
+      },
+      "shifted_instances": 10,
+      "dead_families": [],
+      "specialised": true,
+      "determinism_checked": false
+    },
+    "points": {
+      "quality": 22.904,
+      "robustness": 4.908,
+      "engineering": 0.88,
+      "total": 24.475,
+      "penalties": [
+        "family_below_published_baseline"
+      ]
+    }
+  },
+  "practice": null
+}

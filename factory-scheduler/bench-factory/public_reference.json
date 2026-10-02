@@ -1,0 +1,208 @@
+{
+  "schema": "factory-reference-1.0",
+  "generator_schema": "factory-1.0",
+  "reference_budget_multiplier": 15.0,
+  "note": "baseline_cost_units anchors 0.25, reference_cost_units anchors 1.00. Baseline: adapters.dispatch_swap:DispatchSwapScheduler at 1x budget. Reference: best of the baseline and private/reference_solver.py at 15x budget. Regenerate whenever the generator changes.",
+  "instances": {
+    "f01-small-reentrant": {
+      "size": 125,
+      "profile": {
+        "jobs": 15,
+        "machines": 8,
+        "workload": "bottleneck",
+        "due": "tight",
+        "durations": "heavy_tail",
+        "routing": "reentrant",
+        "setups": "groups"
+      },
+      "digest": "5afa79974486a18c",
+      "contestant_budget_s": 4.83,
+      "baseline_cost_units": 838522,
+      "baseline_adapter": "adapters.dispatch_swap:DispatchSwapScheduler",
+      "reference_cost_units": 790719,
+      "reference_budget_s": 72.5,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 5.7
+    },
+    "f02-small-setups": {
+      "size": 162,
+      "profile": {
+        "jobs": 20,
+        "machines": 10,
+        "workload": "bottleneck",
+        "due": "tight",
+        "durations": "heavy_tail",
+        "routing": "random",
+        "setups": "groups"
+      },
+      "digest": "8e620610864d1e3b",
+      "contestant_budget_s": 5.08,
+      "baseline_cost_units": 931529,
+      "baseline_adapter": "adapters.dispatch_swap:DispatchSwapScheduler",
+      "reference_cost_units": 856184,
+      "reference_budget_s": 76.2,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 8.09
+    },
+    "f03-reentrant-heavy": {
+      "size": 371,
+      "profile": {
+        "jobs": 30,
+        "machines": 12,
+        "workload": "balanced",
+        "due": "tight",
+        "durations": "heavy_tail",
+        "routing": "reentrant",
+        "setups": "groups"
+      },
+      "digest": "04e6c67ba39e68e9",
+      "contestant_budget_s": 6.47,
+      "baseline_cost_units": 887935,
+      "baseline_adapter": "adapters.dispatch_swap:DispatchSwapScheduler",
+      "reference_cost_units": 831277,
+      "reference_budget_s": 97.0,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 6.38
+    },
+    "f04-bottleneck-setups": {
+      "size": 623,
+      "profile": {
+        "jobs": 40,
+        "machines": 15,
+        "workload": "bottleneck",
+        "due": "tight",
+        "durations": "uniform",
+        "routing": "reentrant",
+        "setups": "groups"
+      },
+      "digest": "aabb2fd9d8213077",
+      "contestant_budget_s": 8.15,
+      "baseline_cost_units": 1075183,
+      "baseline_adapter": "adapters.dispatch_swap:DispatchSwapScheduler",
+      "reference_cost_units": 914376,
+      "reference_budget_s": 122.2,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 14.96
+    },
+    "f05-bottleneck-heavy": {
+      "size": 900,
+      "profile": {
+        "jobs": 50,
+        "machines": 18,
+        "workload": "bottleneck",
+        "due": "tight",
+        "durations": "heavy_tail",
+        "routing": "reentrant",
+        "setups": "none"
+      },
+      "digest": "26bf6198acdc3676",
+      "contestant_budget_s": 10.0,
+      "baseline_cost_units": 884040,
+      "baseline_adapter": "adapters.dispatch_swap:DispatchSwapScheduler",
+      "reference_cost_units": 760664,
+      "reference_budget_s": 150.0,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 13.96
+    },
+    "f06-large-reentrant": {
+      "size": 1492,
+      "profile": {
+        "jobs": 70,
+        "machines": 20,
+        "workload": "balanced",
+        "due": "tight",
+        "durations": "heavy_tail",
+        "routing": "reentrant",
+        "setups": "groups"
+      },
+      "digest": "3a48bb2404813bc3",
+      "contestant_budget_s": 13.95,
+      "baseline_cost_units": 971771,
+      "baseline_adapter": "adapters.dispatch_swap:DispatchSwapScheduler",
+      "reference_cost_units": 891914,
+      "reference_budget_s": 209.2,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 8.22
+    },
+    "f07-large-bottleneck": {
+      "size": 1801,
+      "profile": {
+        "jobs": 90,
+        "machines": 24,
+        "workload": "bottleneck",
+        "due": "tight",
+        "durations": "heavy_tail",
+        "routing": "random",
+        "setups": "groups"
+      },
+      "digest": "99e03355019da8bb",
+      "contestant_budget_s": 16.01,
+      "baseline_cost_units": 987758,
+      "baseline_adapter": "adapters.dispatch_swap:DispatchSwapScheduler",
+      "reference_cost_units": 927688,
+      "reference_budget_s": 240.2,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 6.08
+    },
+    "f08-xl-mixed": {
+      "size": 3200,
+      "profile": {
+        "jobs": 110,
+        "machines": 28,
+        "workload": "bottleneck",
+        "due": "tight",
+        "durations": "heavy_tail",
+        "routing": "reentrant",
+        "setups": "groups"
+      },
+      "digest": "3fa4e771840e0cd7",
+      "contestant_budget_s": 25.33,
+      "baseline_cost_units": 933740,
+      "baseline_adapter": "adapters.dispatch_swap:DispatchSwapScheduler",
+      "reference_cost_units": 927376,
+      "reference_budget_s": 379.9,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 0.68
+    },
+    "f09-xl-tight": {
+      "size": 4077,
+      "profile": {
+        "jobs": 130,
+        "machines": 30,
+        "workload": "balanced",
+        "due": "tight",
+        "durations": "heavy_tail",
+        "routing": "reentrant",
+        "setups": "groups"
+      },
+      "digest": "4f1d6b25daf5d29c",
+      "contestant_budget_s": 31.18,
+      "baseline_cost_units": 933624,
+      "baseline_adapter": "adapters.dispatch_swap:DispatchSwapScheduler",
+      "reference_cost_units": 875565,
+      "reference_budget_s": 467.7,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 6.22
+    },
+    "f10-xxl-bottleneck": {
+      "size": 5280,
+      "profile": {
+        "jobs": 150,
+        "machines": 35,
+        "workload": "bottleneck",
+        "due": "tight",
+        "durations": "heavy_tail",
+        "routing": "reentrant",
+        "setups": "groups"
+      },
+      "digest": "019df113bde856fa",
+      "contestant_budget_s": 39.2,
+      "baseline_cost_units": 1055704,
+      "baseline_adapter": "adapters.dispatch_swap:DispatchSwapScheduler",
+      "reference_cost_units": 1035484,
+      "reference_budget_s": 588.0,
+      "reference_adapter": "private/reference_solver.py",
+      "improvement_over_baseline_pct": 1.92
+    }
+  }
+}

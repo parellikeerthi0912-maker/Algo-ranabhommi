@@ -1,0 +1,206 @@
+{
+  "schema": "warehouse-reference-1.0",
+  "generator_schema": "warehouse-1.0",
+  "reference_budget_multiplier": 15.0,
+  "note": "baseline_cost_units anchors 0.25, reference_cost_units anchors 1.00. Baseline: adapters.prioritized at 1x budget. Reference: best of prioritized and an LNS planner at 15x budget. Regenerate whenever the generator changes.",
+  "instances": {
+    "w01-aisles-small": {
+      "size": 50,
+      "profile": {
+        "robots": 50,
+        "width": 24,
+        "height": 20,
+        "topology": "aisles",
+        "density": "sparse",
+        "goals": "scattered",
+        "geometry": "regular"
+      },
+      "digest": "4383cc18db3ad1fa",
+      "contestant_budget_s": 8.17,
+      "baseline_cost_units": 934500,
+      "baseline_cost": 0.9345,
+      "baseline_adapter": "adapters.prioritized:PrioritizedPlanner",
+      "reference_cost_units": 915323,
+      "reference_cost": 0.9153,
+      "reference_budget_s": 122.5,
+      "reference_adapter": "best-of-15x:lns",
+      "improvement_over_baseline_pct": 2.05
+    },
+    "w02-maze": {
+      "size": 60,
+      "profile": {
+        "robots": 60,
+        "width": 28,
+        "height": 24,
+        "topology": "maze",
+        "density": "sparse",
+        "goals": "scattered",
+        "geometry": "regular"
+      },
+      "digest": "689a00929e562d9d",
+      "contestant_budget_s": 9.0,
+      "baseline_cost_units": 996555,
+      "baseline_cost": 0.9966,
+      "baseline_adapter": "adapters.prioritized:PrioritizedPlanner",
+      "reference_cost_units": 978191,
+      "reference_cost": 0.9782,
+      "reference_budget_s": 135.0,
+      "reference_adapter": "best-of-15x:lns",
+      "improvement_over_baseline_pct": 1.84
+    },
+    "w03-open-packed": {
+      "size": 110,
+      "profile": {
+        "robots": 110,
+        "width": 30,
+        "height": 26,
+        "topology": "open",
+        "density": "packed",
+        "goals": "scattered",
+        "geometry": "regular"
+      },
+      "digest": "7aabbaf29505a828",
+      "contestant_budget_s": 13.17,
+      "baseline_cost_units": 926515,
+      "baseline_cost": 0.9265,
+      "baseline_adapter": "adapters.prioritized:PrioritizedPlanner",
+      "reference_cost_units": 917716,
+      "reference_cost": 0.9177,
+      "reference_budget_s": 197.6,
+      "reference_adapter": "best-of-15x:lns",
+      "improvement_over_baseline_pct": 0.95
+    },
+    "w04-open-opposing": {
+      "size": 100,
+      "profile": {
+        "robots": 100,
+        "width": 30,
+        "height": 26,
+        "topology": "open",
+        "density": "packed",
+        "goals": "opposing",
+        "geometry": "regular"
+      },
+      "digest": "5629b6e2055f05cd",
+      "contestant_budget_s": 12.33,
+      "baseline_cost_units": 970188,
+      "baseline_cost": 0.9702,
+      "baseline_adapter": "adapters.prioritized:PrioritizedPlanner",
+      "reference_cost_units": 952885,
+      "reference_cost": 0.9529,
+      "reference_budget_s": 184.9,
+      "reference_adapter": "best-of-15x:lns",
+      "improvement_over_baseline_pct": 1.78
+    },
+    "w05-mixed-packed": {
+      "size": 100,
+      "profile": {
+        "robots": 100,
+        "width": 34,
+        "height": 28,
+        "topology": "mixed",
+        "density": "packed",
+        "goals": "scattered",
+        "geometry": "irregular"
+      },
+      "digest": "26899fa27f84c969",
+      "contestant_budget_s": 12.33,
+      "baseline_cost_units": 1125654,
+      "baseline_cost": 1.1257,
+      "baseline_adapter": "adapters.prioritized:PrioritizedPlanner",
+      "reference_cost_units": 967061,
+      "reference_cost": 0.9671,
+      "reference_budget_s": 184.9,
+      "reference_adapter": "best-of-15x:base",
+      "improvement_over_baseline_pct": 14.09
+    },
+    "w06-maze-irregular": {
+      "size": 80,
+      "profile": {
+        "robots": 80,
+        "width": 40,
+        "height": 34,
+        "topology": "maze",
+        "density": "packed",
+        "goals": "scattered",
+        "geometry": "irregular"
+      },
+      "digest": "88250f31730b5c39",
+      "contestant_budget_s": 10.67,
+      "baseline_cost_units": 1029606,
+      "baseline_cost": 1.0296,
+      "baseline_adapter": "adapters.prioritized:PrioritizedPlanner",
+      "reference_cost_units": 1005172,
+      "reference_cost": 1.0052,
+      "reference_budget_s": 160.1,
+      "reference_adapter": "best-of-15x:lns",
+      "improvement_over_baseline_pct": 2.37
+    },
+    "w07-maze-irregular-b": {
+      "size": 80,
+      "profile": {
+        "robots": 80,
+        "width": 40,
+        "height": 34,
+        "topology": "maze",
+        "density": "packed",
+        "goals": "scattered",
+        "geometry": "irregular"
+      },
+      "digest": "4553b97ed258e42d",
+      "contestant_budget_s": 10.67,
+      "baseline_cost_units": 1001848,
+      "baseline_cost": 1.0018,
+      "baseline_adapter": "adapters.prioritized:PrioritizedPlanner",
+      "reference_cost_units": 993046,
+      "reference_cost": 0.993,
+      "reference_budget_s": 160.1,
+      "reference_adapter": "best-of-15x:base",
+      "improvement_over_baseline_pct": 0.88
+    },
+    "w08-aisles-xl": {
+      "size": 210,
+      "profile": {
+        "robots": 210,
+        "width": 52,
+        "height": 42,
+        "topology": "aisles",
+        "density": "packed",
+        "goals": "scattered",
+        "geometry": "irregular"
+      },
+      "digest": "777b32ea2fb4bbc9",
+      "contestant_budget_s": 21.5,
+      "baseline_cost_units": 989951,
+      "baseline_cost": 0.99,
+      "baseline_adapter": "adapters.prioritized:PrioritizedPlanner",
+      "reference_cost_units": 952300,
+      "reference_cost": 0.9523,
+      "reference_budget_s": 322.5,
+      "reference_adapter": "best-of-15x:lns",
+      "improvement_over_baseline_pct": 3.8
+    },
+    "w09-open-xxl": {
+      "size": 280,
+      "profile": {
+        "robots": 280,
+        "width": 56,
+        "height": 46,
+        "topology": "open",
+        "density": "packed",
+        "goals": "scattered",
+        "geometry": "irregular"
+      },
+      "digest": "3d0bf1c34fcd9fdb",
+      "contestant_budget_s": 27.33,
+      "baseline_cost_units": 960270,
+      "baseline_cost": 0.9603,
+      "baseline_adapter": "adapters.prioritized:PrioritizedPlanner",
+      "reference_cost_units": 932607,
+      "reference_cost": 0.9326,
+      "reference_budget_s": 409.9,
+      "reference_adapter": "best-of-15x:lns",
+      "improvement_over_baseline_pct": 2.88
+    }
+  }
+}
